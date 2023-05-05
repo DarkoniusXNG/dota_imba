@@ -1,0 +1,23 @@
+version: 1.0
+
+workflows:
+  build-workflow:
+    jobs:
+      - build
+jobs:
+  build:
+    docker:
+      - image: cimg/python:3.10.4-node
+    steps:
+      - checkout
+      - run:
+          name: install hererocks and lua
+          command: |
+            pip install --user hererocks
+            hererocks here --lua 5.3 -r https://github.com/mpeterv/luarocks@upgrade-install
+      - run:
+          name: luacheck
+          command: |
+            source here/bin/activate
+            luarocks install luacheck --upgrade --upgrade-deps
+            luacheck -q ./game/scripts/vscripts

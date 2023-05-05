@@ -94,6 +94,7 @@ read_globals = { -- these globals can only be accessed.
 "IsClient",
 "IsDedicatedServer",
 "IsInToolsMode",
+"IsLocationVisible",
 "IsServer",
 "IsValidEntity",
 "LinkLuaModifier",
@@ -116,6 +117,7 @@ read_globals = { -- these globals can only be accessed.
 "RotatePosition",
 "RotateOrientation",
 "RotationDelta",
+"ScreenShake",
 "SendOverheadEventMessage",
 "SendToServerConsole",
 "SetTeamCustomHealthbarColor",
@@ -431,11 +433,14 @@ read_globals = { -- these globals can only be accessed.
 "ACT_DOTA_ATTACK_EVENT",
 "ACT_DOTA_CAST_ABILITY_1",
 "ACT_DOTA_CAST_ABILITY_2",
+"ACT_DOTA_CAST_ABILITY_2_END",
 "ACT_DOTA_CAST_ABILITY_3",
+"ACT_DOTA_CAST_ABILITY_3_END",
 "ACT_DOTA_CAST_ABILITY_4",
 "ACT_DOTA_CAST_ABILITY_5",
 "ACT_DOTA_CAST_ABILITY_6",
 "ACT_DOTA_CAST_ABILITY_ROT",
+"ACT_DOTA_CAST_GHOST_WALK",
 "ACT_DOTA_CHANNEL_ABILITY_1",
 "ACT_DOTA_CHANNEL_ABILITY_2",
 "ACT_DOTA_CHANNEL_ABILITY_3",
@@ -446,6 +451,7 @@ read_globals = { -- these globals can only be accessed.
 "ACT_DOTA_DISABLED",
 "ACT_DOTA_FLAIL",
 "ACT_DOTA_FLINCH",
+"ACT_DOTA_GENERIC_CHANNEL_1",
 "ACT_DOTA_IDLE",
 "ACT_DOTA_IDLE_RARE",
 "ACT_DOTA_KINETIC_FIELD",
@@ -454,10 +460,19 @@ read_globals = { -- these globals can only be accessed.
 "ACT_DOTA_OVERRIDE_ABILITY_3",
 "ACT_DOTA_OVERRIDE_ABILITY_4",
 "ACT_DOTA_RUN",
+"ACT_DOTA_SLARK_POUNCE",
 "ACT_DOTA_SPAWN",
-"ACT_DOTA_GENERIC_CHANNEL_1",
+"ACT_DOTA_SPIRIT_BREAKER_CHARGE_END",
 "ACT_DOTA_TAUNT",
+"ACT_DOTA_TINKER_REARM1",
+"ACT_DOTA_TINKER_REARM2",
+"ACT_DOTA_TINKER_REARM3",
+"ACT_DOTA_VICTORY",
+"ACT_STORM_SPIRIT_OVERLOAD_RUN_OVERRIDE",
 "ACT_TRANSITION",
+"ACT_TINY_AVALANCHE",
+"ACT_TINY_TOSS",
+"ACT_TINY_GROWL",
 -- Linkluamodifier type
 "LUA_MODIFIER_MOTION_NONE",
 "LUA_MODIFIER_MOTION_HORIZONTAL",
@@ -529,6 +544,7 @@ read_globals = { -- these globals can only be accessed.
 "OVERHEAD_ALERT_HEAL",
 "OVERHEAD_ALERT_MAGICAL_BLOCK",
 "OVERHEAD_ALERT_MANA_ADD",
+"OVERHEAD_ALERT_OUTGOING_DAMAGE",
 "OVERHEAD_ALERT_XP",
 -- Connection states
 "DOTA_CONNECTION_STATE_UNKNOWN",
@@ -912,11 +928,11 @@ ignore = {
   -- "111", -- setting non-standard global variable
   -- "112", -- mutating non-standard global variable
   "131", -- unused global variable
-  --"211", -- unused variable
+  "211", -- unused variable
   "212", -- unused argument
   "213", -- unused loop variable
   --"231", -- never accessed
-  --"311", -- Value assigned to a local variable is unused.
+  "311", -- Value assigned to a local variable is unused.
   "611",
   "612",
   "613",

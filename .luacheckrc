@@ -33,6 +33,7 @@ globals = { -- these globals can be set and accessed.
 "ProjectileManager",
 "QAngle",
 "Vector",
+"bit",
 -- Custom globals that can be set and accessed
 "GameMode",
 }
@@ -133,6 +134,7 @@ read_globals = { -- these globals can only be accessed.
 "ACT_DOTA_SPAWN",
 "ACT_DOTA_SPIRIT_BREAKER_CHARGE_END",
 "ACT_DOTA_TAUNT",
+"ACT_DOTA_TELEPORT",
 "ACT_DOTA_TINKER_REARM1",
 "ACT_DOTA_TINKER_REARM2",
 "ACT_DOTA_TINKER_REARM3",
@@ -466,6 +468,7 @@ read_globals = { -- these globals can only be accessed.
 "DoUniqueString",
 "Dynamic_Wrap",
 "EF_NODRAW",
+"EmitAnnouncerSound",
 "EmitGlobalSound",
 "EmitSoundOnClient",
 "EmitSoundOnLocationForAllies",
@@ -931,6 +934,7 @@ read_globals = { -- these globals can only be accessed.
 "UnitFilter",
 "VectorToAngles",
 "class",
+"json",
 }
 
 ignore = {

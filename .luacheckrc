@@ -944,7 +944,7 @@ ignore = {
   "211", -- unused variable
   "212", -- unused argument
   "213", -- unused loop variable
-  --"231", -- never accessed
+  "231", -- never accessed
   "311", -- Value assigned to a local variable is unused.
   "611",
   "612",
@@ -968,4 +968,21 @@ exclude_files = {
   "game/scripts/vscripts/components/items/item_candy.lua",
   "game/scripts/vscripts/components/abilities/neutral_roshan.lua",
   "game/scripts/vscripts/components/modifiers/diretide",
+  "game/scripts/vscripts/components/modifiers/mutation",
+  "game/scripts/vscripts/components/modifiers/overthrow",
+  "game/scripts/vscripts/components/settings/settings_diretide.lua",
+  "game/scripts/vscripts/libraries/hero_selection/fun.lua",
+  "game/scripts/vscripts/libraries/wearables.lua",
+  "game/scripts/vscripts/libraries/wearables_warmful_ancient.lua",
+  "game/scripts/vscripts/components/mutation",
+  "game/scripts/vscripts/components/overthrow",
+  "game/scripts/vscripts/fire_trap_trigger.lua",
+  "game/scripts/vscripts/modifier_spike_trap_lua.lua",
+  "game/scripts/vscripts/pendulum_trap_ai.lua",
+  "game/scripts/vscripts/pendulum_trap_trigger.lua",
+  "game/scripts/vscripts/spike_trap_ai.lua",
+  "game/scripts/vscripts/venom_trap_trigger.lua",
+  "game/scripts/vscripts/overboss.lua",
+  "game/scripts/vscripts/breathe_fire.lua",
+  "game/scripts/vscripts/breathe_poison.lua",
 }

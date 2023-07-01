@@ -5,11 +5,29 @@
 *.tmp
 
 # Compiled formats
-*.vmat_c
 *.vagrp_c
+*.vanim_c
+*.vcss_c
+*.vjs_c
+*.vmat_c
+*.vmdl_c
 *.vmesh_c
+*.vmorf_c
+*.vpcf_c
+*.vpk
+*.vseq_c
+*.vsnd_c
+*.vsndevts_c
+*.vtex_c
+*.vxml_c
 
-# Map files
+# Compiled assets
+game/maps/
+game/materials/
+game/models/
+game/particles/
+game/soundevents/
+game/sounds/
 
 # Map overviews
 resource/overviews/*
@@ -27,16 +45,11 @@ game/server_log\.txt
 
 # Roshan
 content/models/rosh*
-game/models/rosh*
 
 # eclipse
 .project
 .settings
 .DS_Store
 .idea
-
-# Imbathrow
-content/materials/models/courier/*
-*.vjs_c
 
 node_modules
